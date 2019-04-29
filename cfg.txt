@@ -1,0 +1,21 @@
+LBP_GLCM{
+lbp:
+numPoints=4
+radius=8
+method="uniform"
+
+glcm:
+axis=[0, 0.785398]
+}
+
+LBP{
+lbp:
+numPoints=24
+radius=8
+method="uniform"
+}
+
+GLCM{
+glcm:
+axis=[0, 0.785398]
+}
