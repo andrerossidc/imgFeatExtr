@@ -4,6 +4,7 @@
 #	self.params = {} # inicializar estrutura de dados
 
 from ast import literal_eval
+import numpy as np
 
 def readParams(parFile):
 	param_list = []

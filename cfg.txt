@@ -1,21 +1,31 @@
 LBP_GLCM{
 lbp:
-numPoints=4
-radius=8
+P=24
+R=8
 method="uniform"
 
 glcm:
-axis=[0, 0.785398]
+distances=[1]
+angles=[0, 0.7853981633974483, 1.5707963267948966, 2.356194490192345]
 }
 
 LBP{
 lbp:
-numPoints=24
-radius=8
+P=24
+R=8
 method="uniform"
 }
 
 GLCM{
 glcm:
-axis=[0, 0.785398]
+distances=[1]
+angles=[0, 0.7853981633974483, 1.5707963267948966, 2.356194490192345]
+}
+
+HOG{
+hog:
+orientations=9
+pixels_per_cell=(8,8)
+cells_per_block=(1,1)
+block_norm="L2-Hys"
 }
