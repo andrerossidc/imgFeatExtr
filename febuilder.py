@@ -78,6 +78,12 @@ class FeaturesBuilder:
             hog_arguments['pixels_per_cell'] = arg.pixels_cells
             param_dict_list.append(hog_arguments)
             print("\n Tem HOG \n")
+            
+        if (args.colorHist == True):
+            colorHist_arguments = {}
+            colorHist_arguments['bins'] = args.bins
+            colorHist_arguments['color'] = args.color
+            param_dict_list.append(colorHist_arguments)
 
         # Retorna a lista de dicionarios
         return param_dict_list

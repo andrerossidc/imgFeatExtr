@@ -1,0 +1,5 @@
+ColorHist{
+colorHist:
+bins=8
+color="HSV"
+}

@@ -121,3 +121,9 @@ pixels_per_cell=(8,8)
 cells_per_block=(3,3)
 block_norm="L2-Hys"
 }
+
+ColorHist{
+colorHist:
+bins=8
+color="HSV"
+}

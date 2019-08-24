@@ -2,6 +2,7 @@
 from featmethods import glcm
 from featmethods import lbp
 from featmethods import hog
+from featmethods import colorhist
 import pandas as pd
 from scipy import misc
 import os
@@ -157,6 +158,9 @@ class FEMethods:
             elif (k == "hog"):
                 print("\n HOG: \n")
                 ftr_extractor_obj_list.append(hog.HOG(**param))
+            elif (k == "colorHist"):
+                print("\n Color Histogram \n")
+                ftr_extractor_obj_list.append(colorhist.colorHist(**param))
 
             # Precisa de tratamento de erros
             else:
