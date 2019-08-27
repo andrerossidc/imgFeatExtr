@@ -3,6 +3,7 @@ from featmethods import glcm
 from featmethods import lbp
 from featmethods import hog
 from featmethods import colorhist
+from featmethods import humoments 
 import pandas as pd
 from scipy import misc
 import os
@@ -161,6 +162,9 @@ class FEMethods:
             elif (k == "colorHist"):
                 print("\n Color Histogram \n")
                 ftr_extractor_obj_list.append(colorhist.colorHist(**param))
+            elif (k == "huMoments"):
+                print("\n Hu Moments \n")
+                ftr_extractor_obj_list.append(humoments.huMoments(**param))
 
             # Precisa de tratamento de erros
             else:

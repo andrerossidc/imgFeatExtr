@@ -3,3 +3,7 @@ colorHist:
 bins=8
 color="HSV"
 }
+
+HuMoments{
+huMoments:
+}
