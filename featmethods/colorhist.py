@@ -17,6 +17,7 @@ class colorHist:
         hist = []
 
         # compute the color histogram for each level
+
         if (len(image.shape) > 2):
             #check if user chose HSV. Default image is RGB
             if (self.color == "HSV"):
@@ -31,7 +32,7 @@ class colorHist:
         # normalize the histogram
         cv2.normalize(hist, hist)
         # falt histogram
-        hist.flatten()
+        hist = hist.flatten()
 
         # return the histogram
         return hist

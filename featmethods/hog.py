@@ -23,7 +23,7 @@ class HOG:
 
 		H = hog(image, orientations=self.orientations, pixels_per_cell=self.pixels_per_cell,
 			cells_per_block=self.cells_per_block, transform_sqrt=self.transform_sqrt, block_norm=self.block_norm,
-			visualise=self.visualise) #, multichannel=self.multichannel)
+			visualize=self.visualise) #, multichannel=self.multichannel)
 		#print(H)
 			#H = hog(image)
 
