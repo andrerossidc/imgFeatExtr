@@ -99,5 +99,97 @@ cells_per_block=(3,3)
 block_norm="L2-Hys"
 }
 
+LBP_HOG_2cells{
+lbp:
+P=24
+R=8
+method="uniform"
 
+hog:
+orientations=9
+pixels_per_cell=(8,8)
+cells_per_block=(2,2)
+block_norm="L2-Hys"
+}
 
+LBP_HOG_3cells{
+lbp:
+P=24
+R=8
+method="uniform"
+
+hog:
+orientations=9
+pixels_per_cell=(8,8)
+cells_per_block=(3,3)
+block_norm="L2-Hys"
+}
+
+LBP_GLCM{
+lbp:
+P=24
+R=8
+method="uniform"
+
+glcm:
+distances=[1]
+angles=[0, 0.7853981633974483, 1.5707963267948966, 2.356194490192345]
+}
+
+GLCM_HOG_2cells{
+glcm:
+distances=[1]
+angles=[0, 0.7853981633974483, 1.5707963267948966, 2.356194490192345]
+
+hog:
+orientations=9
+pixels_per_cell=(8,8)
+cells_per_block=(2,2)
+block_norm="L2-Hys"
+}
+
+GLCM_HOG_3cells{
+glcm:
+distances=[1]
+angles=[0, 0.7853981633974483, 1.5707963267948966, 2.356194490192345]
+
+hog:
+orientations=9
+pixels_per_cell=(8,8)
+cells_per_block=(3,3)
+block_norm="L2-Hys"
+}
+
+LBP_GLCM_HOG_2cells{
+lbp:
+P=24
+R=8
+method="uniform"
+
+glcm:
+distances=[1]
+angles=[0, 0.7853981633974483, 1.5707963267948966, 2.356194490192345]
+
+hog:
+orientations=9
+pixels_per_cell=(8,8)
+cells_per_block=(2,2)
+block_norm="L2-Hys"
+}
+
+LBP_GLCM_HOG_3cells{
+lbp:
+P=24
+R=8
+method="uniform"
+
+glcm:
+distances=[1]
+angles=[0, 0.7853981633974483, 1.5707963267948966, 2.356194490192345]
+
+hog:
+orientations=9
+pixels_per_cell=(8,8)
+cells_per_block=(3,3)
+block_norm="L2-Hys"
+}
