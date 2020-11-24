@@ -44,6 +44,16 @@ cells_per_block=(2,2)
 block_norm="L2-Hys"
 }
 
+HuMoments_HOG_3cells{
+huMoments:
+
+hog:
+orientations=9
+pixels_per_cell=(8,8)
+cells_per_block=(3,3)
+block_norm="L2-Hys"
+}
+
 ColorHist_GLCM{
 colorHist:
 bins=8
@@ -74,6 +84,18 @@ hog:
 orientations=9
 pixels_per_cell=(8,8)
 cells_per_block=(2,2)
+block_norm="L2-Hys"
+}
+
+ColorHist_HOG_2cells{
+colorHist:
+bins=8
+color="HSV"
+
+hog:
+orientations=9
+pixels_per_cell=(8,8)
+cells_per_block=(3,3)
 block_norm="L2-Hys"
 }
 
